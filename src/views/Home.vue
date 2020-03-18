@@ -3,10 +3,8 @@
     <!-- <section>
        <img class="img-fluid" alt="Vue logo" src="../assets/img/Land2.jpg">
     </section> -->
-    <Land class="land" />
+    <Land />
 
-    <br>
-    <hr>
   </article>
 </template>
 
@@ -24,29 +22,31 @@ export default {
 
 
 <style scoped>
-article {
+.home {
   text-align: center;
   justify-content: center;
   width: 100%;
-  height: auto;
-  margin: 5px 75px;
+  height: 100%;
+  margin: 0;
 }
 
-.land {
+/* .land {
   position: relative;
   width: 1000px;
-  background-color: #b0a7a7;
-  left: 0;
-}
+  background-color: #f5f5f5;
+  
+} */
 
 
-  @media screen and (max-width: 420px){
-      .land{
-        background-color: #ff00ff;
-        height: auto;
-        left: 0;
-        width: 100px;
-   }
+  @media(max-width: 500px){
+
+      .home{
+        width: 100%;
+        padding: 5px;
+        height: 100%;
+      }
+
+    
    }
 
 

@@ -2,8 +2,10 @@
   <article>
       <!-- <h1>This is a Work page</h1> -->
       <section>
-          <Kaar />
+          <Kaar class="kaar"/>
       </section>
+
+      
   </article>
 </template>
 
@@ -19,6 +21,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    @media(max-width: 500px){
 
+        article{
+            height: 100%;
+            margin: 0;
+        }
+
+        .kaar{
+            margin-bottom: 60px;
+        }
+    }
 </style>

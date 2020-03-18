@@ -3,10 +3,12 @@
     <h1>This is an about page</h1>
     <br>
     <hr>
-    <Yek />
+    <Textt />
     <br>
     <hr>
-    <Textt />
+    <Yek />
+    <br>
+    
   </article>
 </template>
 

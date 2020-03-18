@@ -1,7 +1,7 @@
 module.exports = {
-  outputDir: 'Vue-App',
+  outputDir: 'Nona',
 
   pwa: {
-    name: 'VueApp'
+    name: 'Nona'
   }
 }

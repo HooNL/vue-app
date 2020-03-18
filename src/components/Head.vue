@@ -1,9 +1,9 @@
 <template>
   <header>
-    <nav id="nav" class="sticky-top navbar navbar-dark bg-dark p-4">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/werk">Werk</router-link>
+    <nav id="nav" class="bg-primary">
+      <router-link to="/" class="a">Home</router-link> 
+      <router-link to="/about" class="a">About</router-link>
+      <router-link to="/werk" class="a">Werk</router-link>
 
     </nav>
   </header>
@@ -16,5 +16,14 @@ export default {
 </script>
 
 <style scoped>
+
+  @media(max-width: 500px){
+    header{
+      padding: 0;
+    }
+    .a{
+      font-size: 20px;
+    }
+  }
 
 </style>
