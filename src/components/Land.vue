@@ -5,6 +5,8 @@
           <button class="btn btn-success" @click="fechLanden()">Ophalen</button>
           <button class="btn btn-danger" @click="wisLand()">Wisen</button><br>
         
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio obcaecati, necessitatibus numquam porro tenetur dolores. Enim eligendi laboriosam non repellat.</p>
       
       <section>
           <h3 v-if="!loading">
@@ -27,7 +29,7 @@
                     <p>
                       {{ land.capital }}
                     : {{ land.population }} (bevolking/miljoen).
-                    |  
+                    
                     {{ land.languages.name }}
                     </p>
 
@@ -35,8 +37,7 @@
           </ul>
         </section>
 
-          <button class="btn btn-info" @click="fechCity()">City</button>
-          <button class="btn btn-info" @click="wisCity()">Wis City</button>
+         
     </section>
   </article>
 </template>
@@ -54,15 +55,11 @@ export default {
             this.$store.dispatch('wisLand');
         },
 
-        fechCity(){
-            this.$store.dispatch('fechCity');
-        },
-        wisCity(){
-            this.$store.dispatch('wisCity');
-        },
+        
 
         getLand(name){
-            console.log(this.$store.getters.getLand(name));
+            //4
+            //console.log(this.$store.getters.getLand(name));
             this.$router.push({
                 name: 'landen-detail',
                 params: {
@@ -111,4 +108,16 @@ export default {
     .list-group-item{
         cursor: pointer;
     }
+
+
+    
+@media screen and (min-width: 420px) {
+  .land {
+    width: 100%;
+    height: auto;
+    left: 0;
+    background-color: #ff0000;
+  }
+
+}
 </style>

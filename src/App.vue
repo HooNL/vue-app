@@ -1,12 +1,26 @@
 <template>
   <article id="app">
-    <nav id="nav" class="sticky-top navbar navbar-dark bg-dark p-4">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <Head />
+
+
     <router-view/>
+
+    <Foot />
   </article>
 </template>
+
+<script>
+  import Head from '@/components/Head'
+  import Foot from '@/components/Foot'
+  
+  export default {
+    
+    components: {
+      Head,
+      Foot
+    },
+  }
+</script>
 
 <style>
 #app {
@@ -33,5 +47,18 @@
 
    .router-link-exact-active {
       color: #42b983;
+    }
+
+
+
+    /* Voor mobile port */
+    @media screen and (max-width: 420px){
+      #app{
+        background-color: #ff00ff;
+        height: auto;
+
+      }
+
+    
     }
 </style>

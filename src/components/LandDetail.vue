@@ -6,7 +6,7 @@
     <table class="table table-striped">
         <tr>
             <td>Vlag</td>
-            <td><img :src="land.flag" alt="Land vlag" class="imgFlag"></td>
+            <td><img :src="land.flag" alt="Land vlag" class="img"></td>
         </tr>
     </table>
 
