@@ -3,7 +3,7 @@
     <nav id="nav" class="bg-primary">
       <router-link to="/" class="a">Home</router-link> 
       <router-link to="/about" class="a">About</router-link>
-      <router-link to="/werk" class="a">Werk</router-link>
+      <router-link to="/work" class="a">Work</router-link>
 
     </nav>
   </header>
